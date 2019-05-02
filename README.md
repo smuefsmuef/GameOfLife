@@ -1,7 +1,7 @@
 # GameOfLife
 Game: of Life in javaScript
 
-**My first own Project
+### My first own Project
 
 The goal was as follows:
 
