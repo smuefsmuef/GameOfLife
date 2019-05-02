@@ -1,0 +1,48 @@
+h1 {
+    color: black;
+    background-color: lightgrey;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+h2 {
+    color: black;
+    background-color: lightgrey;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+h3 {
+    color: #cd6849;
+    background-color: #f4f4f4;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+
+table, th, td {
+    table-layout: fixed;
+    width: 20px;
+    height: 20px;
+    border: 1px solid grey;
+    border-collapse: collapse;
+    background: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+button {
+    background-color: lightgrey;
+    border: 2px solid grey;
+    color: black;
+    padding: 5px 50px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+p{
+    font-family: sans-serif;
+}
