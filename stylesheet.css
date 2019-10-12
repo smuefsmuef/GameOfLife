@@ -1,48 +1,68 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #dff0ea;
+  text-align: left;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  }
+
 h1 {
-    color: black;
-    background-color: lightgrey;
+    color: #4f3a65;
     font-weight: bold;
-    font-family: sans-serif;
+    font-size: 3rem;
+    font-family: 'Bitter', serif;
+
+}
+
+.bg-light {
+  background-color: #dff0ea !important;
 }
 
 h2 {
-    color: black;
-    background-color: lightgrey;
+    color: #574f7d;
     font-weight: bold;
-    font-family: sans-serif;
 }
 
 h3 {
-    color: #cd6849;
-    background-color: #f4f4f4;
+    color: #95adbe;
     font-weight: bold;
-    font-family: sans-serif;
 }
 
 
 table, th, td {
     table-layout: fixed;
-    width: 20px;
-    height: 20px;
-    border: 1px solid grey;
+    width: 1rem;
+    height: 1rem;
+    /* border: 1px solid #95adbe; */
     border-collapse: collapse;
-    background: white;
     text-align: center;
-    font-family: sans-serif;
+    position: relative;
+    cursor: crosshair;
+    /* border-radius: 10px; */
 }
 
-button {
-    background-color: lightgrey;
-    border: 2px solid grey;
-    color: black;
-    padding: 5px 50px;
+table {
+  margin-right: 10px;
+}
+
+.btn {
+    color: #4f3a65;
+    padding: 5px 20px;
+    margin-right: 8px;
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-    font-family: sans-serif;
 }
 
-p{
-    font-family: sans-serif;
+.game-section {
+  margin-top: 100px;
+  margin-left: 10px;
+}
+.controls {
+  margin-bottom: 30px;
+}
+
+.instructions {
+  margin-bottom: 30px;
 }

@@ -1,11 +1,10 @@
-// global variabels
 var xn = 70; //#columns
-var yn = 35; //#rows
+var yn = 47 //#rows
 var currentGeneration;
 var nextGeneration;
 var allNeighbors;
-var counter = 0; //starts at 0
-var amount = 0; //starts at 0
+var counter = 0;
+var amount = 0;
 
 // get element table from index.html
 var table = document.getElementById("table");
@@ -154,7 +153,6 @@ function info() {
     document.getElementById("cells").innerHTML = amount;
 }
 
-
 // set the counter of generations back to zero
 function setToZero() {
     counter = 0;
@@ -164,7 +162,7 @@ function setToZero() {
 }
 
 // on click activates/deactivates cells
-table.onclick = function klicken(x) {
+table.onmouseover = function clickCell(x) {
     if (x.srcElement.wert !== true) { //when not alive, resurrect
         x.srcElement.style = "background:orange"; //set color
         x.srcElement.wert = true; //set table value
@@ -174,7 +172,6 @@ table.onclick = function klicken(x) {
     else { //when alive, kill
         x.srcElement.style = "background:white";
         x.srcElement.wert = false;
-        //x.srcElement.innerHTML = 'f';
         currentGeneration[x.srcElement.zeilenIndex][x.srcElement.spaltenIndex] = false;
     }
     console.log("Cell " + x.srcElement.zeilenIndex + "|" + x.srcElement.spaltenIndex + " is " + currentGeneration[x.srcElement.zeilenIndex][x.srcElement.spaltenIndex]); //aray:
@@ -183,8 +180,17 @@ table.onclick = function klicken(x) {
 };
 
 
+
+
 /*
 // ToDo: Evtl. zusätzliche Funktion einbauen
+
+// when generation x is equal generation y the automatically stop
+// change colors
+/change size
+// change speed
+
+
 //function createPattern
 document.getElementById("pattern").onclick = function(x) {
     var patterns = table[Math.floor(Math.random() * table.length)]; //müsste ein td x y rausgeben
